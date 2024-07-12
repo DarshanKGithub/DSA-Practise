@@ -41,7 +41,7 @@ public class LinkedList {
         tail = newNode;
     }
 
-    public void add(int idx, int data) {
+    public  void add(int idx, int data) {
         Node newNode = new Node(data);
         Node temp = head;
         int i = 0;
