@@ -1,13 +1,21 @@
 package Recursion;
 
 public class DecreasingOrder {
-    public static void main(String[] atgs) {
-        int n = 10;
+    // Method by Recursion
 
-        // iterating
-        for (int i = n; i >= 1; i--) {
-            System.out.print(i + " ");
+    public static void printDec(int n) {
+        // condition
+        if (n == 1) {
+            System.out.println(n);
+            return;
         }
-        System.out.println();
+        System.out.print(n + " ");
+        printDec(n - 1);
+
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        printDec(n);
     }
 }
